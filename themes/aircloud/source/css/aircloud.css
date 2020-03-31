@@ -8,6 +8,7 @@ html {
   padding: 0;
 }
 body {
+  margin-top: 100px;
   margin-left: calc(100vw - 100%) !important;
   -webkit-text-size-adjust: none;
 }

@@ -4,9 +4,9 @@
 
 # Site
 title: AirCloud Blog
-subtitle: sometimes code， sometimes design
-author: Xiaotao Nie
-language: zh
+## subtitle: 
+author: Wolfi
+language: en
 timezone:
 
 # URL
@@ -20,39 +20,39 @@ permalink_defaults:
 
 # Site settings
 # 网站综合内容设置：
-SEOTitle: Wolfi Blog
-email: wolfi@bytenine.io
-description: "Description"
-keyword: "keyword"
+SEOTitle: AirCloud的博客 | AirCloud's Blog
+email: onlythen@yeah.net
+description: "聂小涛的博客"
+keyword: "腾讯"
 
 # SNS settings
 # 一些社交平台地址，支持以下几种：
-# weibo_username:     3286578617
-# zhihu_username:     ai-er-lan-xue-da
-github_username:    wolfikan
-# twitter_username:   iconie_alloy
-# facebook_username:  xiaotao.nie.5
-# linkedin_username:  小涛-聂-80964aba
+## weibo_username:     3286578617
+## zhihu_username:     ai-er-lan-xue-da
+## github_username:    AirCloud
+## twitter_username:   iconie_alloy
+## facebook_username:  xiaotao.nie.5
+## linkedin_username:  小涛-聂-80964aba
 
 # Build settings
 anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
 
-sidebar-avatar: img/avatar.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-avatar: img/avatar.png      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 # Friends
 # 友情链接
-friends: [
-    {
-        title: "10000H",
-        href: "https://www.10000h.top"
-    },{
-        title: "Xiaotao's Page",
-        href: "https://niexiaotao.com"
-    },{
-        title: "It helps SEO",
-        href: "#"
-    }
-]
+## friends: [
+##     {
+##         title: "10000H",
+##         href: "https://www.10000h.top"
+##     },{
+##         title: "Xiaotao's Page",
+##         href: "https://niexiaotao.com"
+##     },{
+##         title: "It helps SEO",
+##         href: "#"
+##     }
+## ]
 
 #comment:
 #  type: gitment
@@ -61,9 +61,11 @@ friends: [
 #  owner: aircloud
 #  repo: hexo-aircloud-blog
 
-comment:
-   type: disqus
-   script: 'https://airclouds-blog.disqus.com/embed.js'
+utterances:
+  enable: true
+  repo: weisswolfi/weisswolfi.github.io
+  issue_term: title
+  theme: github-light
 
 donate:
   img: img/donate.jpg
@@ -134,3 +136,4 @@ theme: aircloud
 #  type: git
 #  repo: your repo url
 #  branch: master
+

@@ -1,6 +1,3 @@
-
-
-
 <div class="post-container">
     <div class="post-title">
         <%- page.title.replace(/[<>&"]/g,function(c){
@@ -24,11 +21,10 @@
     </div>
     <div class="post-content <% if(config.post_style && !config.post_style.indent) {%>no-indent<% } %>">
         <%- page.content %>
-        <% if(config.donate){%>
-            <%- partial('_partial/donate', null, {cache: false}) %>
-        <% } %>
-        <br />
-        <div id="comment-container">
+        <br/>
+        <!-- Comment -->
+        <%- partial('comment') %>
+        <!--<div id="comment-container">-->
         </div>
         <div id="disqus_thread"></div>
 
