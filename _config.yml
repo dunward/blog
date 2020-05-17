@@ -1,8 +1,8 @@
 title: Cave
 author: weisswolfi
-email: wolfi@bytenine.io
+email: contact@wolfi.in
 description: > # this means to ignore newlines until "show_exerpts:"
-  Game Client Programmer Tech Blog
+  Game Programmer's Tech Blog
 show_excerpts: true # set to true to show excerpts on the homepage
 
 # Minima date format
@@ -11,7 +11,7 @@ sass:
   sass_dir: _sass
 plainwhite:
   name: Wolfi
-  tagline: Client Developer
+  tagline: Software Engineer
   date_format: "%b %-d, %Y"
   sitemap: true # set to true to generate sitemap.xml content
 
