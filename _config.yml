@@ -10,7 +10,7 @@ show_excerpts: true # set to true to show excerpts on the homepage
 sass:
   sass_dir: _sass
 plainwhite:
-  name: Elik Song
+  name: Elik Weiss
   tagline: Software Engineer
   date_format: "%b %-d, %Y"
   sitemap: true # set to true to generate sitemap.xml content
@@ -41,8 +41,7 @@ plainwhite:
 # - about.md
 
 # Build settings
-# theme: plainwhite
-remote_theme: samarsault/plainwhite-jekyll
+theme: plainwhite
 
 plugins:
   - jekyll-seo-tag
