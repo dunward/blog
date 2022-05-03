@@ -2,12 +2,9 @@
 layout: post
 title:  Unity yaml과 TagManager
 date:   2022-05-03 21:12:03 +0900
-categories: unity
+categories: unity yaml
 ---
-익명 카톡방에서 물어본 이슈인데 유니티 yaml과 관련해서 설명하기 좋을듯해서 블로그에 정리
-
 유니티 Scene에서는 내부 GameObject를 yaml로 아래와같이 저장합니다.
-
 ## Scene yaml
 ```
 GameObject:
