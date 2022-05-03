@@ -10,7 +10,7 @@ show_excerpts: true # set to true to show excerpts on the homepage
 sass:
   sass_dir: _sass
 plainwhite:
-  name: Elik Weiss
+  name: Min Song
   tagline: Software Engineer
   date_format: "%b %-d, %Y"
   dark_mode: true # set to true to add dark mode toggle
