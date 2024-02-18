@@ -6,7 +6,7 @@ categories: unity il2cpp
 ---
 유니티에서 Burst Compiler가 도입되기전에는 빌드시에 아래와 같은 프로세스를 거칩니다.
 
-![1](https://github.com/novemberi/novemberi.github.io/tree/master/_posts/il2cpp/1.png)
+![1](/assets/il2cpp/1.png)
 
 최근에 업무중에 오래된 유니티 프로젝트를 최신버전으로 업데이트해야할 일이 있었는데, 사실 유니티빌드 그대로 사용하는 프로젝트라면 크게 문제되지 않습니다.
 
@@ -14,7 +14,7 @@ categories: unity il2cpp
 
 유니티 Burst Compiler는 위 이미지에서 IL2CPP라고 불리는 과정을 약간 수정한 기능입니다.
 
-![2](https://github.com/novemberi/novemberi.github.io/tree/master/_posts/il2cpp/2.png)
+![2](/assets/il2cpp/2.png)
 
 위 이미지에 보시면 IL 과정이 약간 바뀌었습니다. 여기서는 Burst Compiler에 관해 다루는 포스트가 아니기 때문에 그렇게 자세히 다루지는 않을 예정이지만, 유니티 프로젝트는 이제 Burst Compiler의 영향을 받는 코드와, 일반 코드 이렇게 두개로 나뉘어져있습니다.
 
