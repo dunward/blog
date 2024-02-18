@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Unity Build Pipeline
-date:   2022-05-03 21:12:03 +0900
+date:   2024-02-18 13:42:03 +0900
 categories: unity il2cpp
 ---
 유니티에서 Burst Compiler가 도입되기전에는 빌드시에 아래와 같은 프로세스를 거칩니다.
