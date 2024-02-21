@@ -1,6 +1,6 @@
 title: Cave
-author: weisswolfi
-email: contact@wolfi.in
+author: Elik Song
+email: elik@oxygen.ist
 description: > # this means to ignore newlines until "show_exerpts:"
   Game Programmer's Tech Blog
 show_excerpts: true # set to true to show excerpts on the homepage
@@ -24,8 +24,8 @@ plainwhite:
   # generate social links in footer
   social_links:
     # twitter: thelehhman
-    github:  weisswolfi
-    linkedIn: in/weisswolfi
+    github:  novemberi
+    linkedIn: in/novemberi
     rss: rss
     # dribbble: jekyll
     # flickr:   jekyll
