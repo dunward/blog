@@ -2,7 +2,7 @@
 layout: post
 title:  Blue Archive Story Simulator
 date:   2024-09-08 16:33:08 +0900
-categories: others
+categories: unity bass
 ---
 최근에 잠깐 찍먹으로 블루아카이브를 시작해봤는데 꽤 재밌어서 빠져있습니다.
 
