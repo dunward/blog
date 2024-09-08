@@ -16,4 +16,5 @@ categories: unity bass
 
 Action List같은걸 만들어서 배경 변경, 캐릭터 등장과 같은걸 묶어서 하나의 노드에서 처리하는식의 흐름대로 작업하지 않을까 싶습니다.
 
+[WebGL Demo Url](dunward.github.io/bass-page/)
 ![bass](/assets/bass-1/bass.png)
