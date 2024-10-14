@@ -1,0 +1,67 @@
+---
+layout: post
+title:  Blue Archive Story Simulator - 중간결산
+date:   2024-10-14 22:31:08 +0900
+categories: unity bass
+---
+
+시뮬레이터를 우선 대강은 기초 엔진(?)이라고 부를 Capricorn의 개발과 병행하면서 거의 한달정도 지났는데 대략적인 기틀은 다 잡힌것 같습니다.
+대략적으로 기억나는 타임라인 순서대로 중간결산겸 어떤식으로 개발했는지 정리할겸 작성해봤습니다.
+
+블루아카이브 리소스를 우선 가져오는것부터 꽤 고난이었는데, 번들파일이 많아서 필요한것만 추출하기도 쉽지않더라구요.
+우선 UI Atlas를 가져와서 작업해줬습니다. 블아가 NGUI를 쓰고있어서 NGUI의 좌표랑 UGUI의 좌표랑 서로 미스매칭되는 부분을 컨버팅해줄 툴도 간략하게 만들어서 작업해줍니다.
+![converter](/assets/bass-2/converter.png)
+![atlas](/assets/bass-2/atlas.png)
+
+NGUI에 있는 json파일과 atlas 이미지를 이용하면 위와같이 유니티 UGUI에 맞는 형태로 slice할수 있습니다.
+
+그리고 우선적으로 블루아카이브 스토리진행중에 캐릭터들이 홀로그램 상태로 등장하는 경우가있는데, 해당부분은 Shader Graph를 이용하여 대충 구현해줍니다.
+
+[결과물 링크](https://github.com/dunward/blue-archive-hologram-shader)
+
+![1](/assets/bass-2/graphview1.png)
+![2](/assets/bass-2/graphview2.png)
+
+그리고 최대한 유니티에 있는 GraphView의 툴과 유사한 사용경험 + 퀄리티를 뽑아내기위해 Toolkit Debugger를 이용해서 최대한 동일한 구조로 만들려고 노력했습니다.
+
+최근엔 UIElements가 나름 익숙해져서 UIElements로 전부 구현은 가능하지만 Shader Graph에서도 상단 툴바는 IMGUI, 하단 그래프뷰는 UIElements로 구현되어있기때문에 Capricorn Novel Editor도 해당 구조와 동일하도록 구현했습니다.
+
+![test1](/assets/bass-2/test1.png)
+
+우선 간략하게 엔진의 기틀을 작업해보고, 실제로 해당 파일로 나온 json을 시뮬레이터에 돌려보면
+
+![test2](/assets/bass-2/test2.png)
+![test3](/assets/bass-2/test3.png)
+
+대강 원하는대로 잘 나오는걸 확인할 수 있습니다.
+
+이후에는 노벨엔진 고도화작업과, 실제 시뮬레이터 WebGL 페이지 부분에 신경을 좀 썼습니다.
+
+![4](/assets/bass-2/4.png)
+
+아직 작업 진행중이지만 프롤로그를 기준으로 작업한 노드
+
+그리고 WebGL 데모 페이지
+
+![webgl-loading](/assets/bass-2/webgl-loading.png)
+![webgl-main](/assets/bass-2/webgl-main.png)
+![webgl-demo](/assets/bass-2/webgl-demo.png)
+
+유니티 로딩부분이나 메인화면들, 그리고 실제 상단에 그래프뷰에서 작업한 json을 기준으로 동작하는 시뮬레이터까지 작업을 해뒀습니다.
+
+사실 지금도 bass 메인 유니티 프로젝트를 공개하면 유니티가 설치되어있는 누구나 스토리제작이 가능하지만, 블루아카이브 리소스가 많이 들어있기도하고 이게 실제로 플레이가능한 결과물로서 프로젝트가 공개되어있으면 꽤 위험할것같아 비공개 상태로 유지하고있습니다.
+
+Capricorn도 여기서 개발을 끝낼 생각은없고, GraphView를 유니티 런타임에서도 작업할수있게 지원할 예정이고, 마찬가지로 당연히 유니티 런타임에서 작업할수있다는 말은 WebGL 클라이언트에서 유저가 스토리를 만들 수 있습니다.
+
+그때가 오면 2차 창작으로 스토리를 만드는 툴로 완성이라고 할수있겠죠.
+
+아직 갈길은 먼것같지만 나름 재밌게 작업하고 있습니다.
+
+![432](/assets/bass-2/432.jpg)
+
+이번 종전시는 432클해서 기분굿 ㅋ
+제결전은 뉴비분쇄기라 24층찍고 손도 못대는게 아쉽네요.
+
+- [Capricorn 바로가기](https://github.com/dunward/Capricorn)
+- [Blue Archive Story Simulator 바로가기](https://dunward.github.io/bass-page/)
+- [Story Simulator 테스트파일 다운로드](https://github.com/dunward/bass-page/discussions/1)
